@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #fffde7;
+}
+
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+.hero-section {
+  /* background-image: url('/image/backgroundImgHeroSection.jpg'); */
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  position: relative;
+}
+.hero-overlay {
+  background: rgba(0, 123, 255, 0.6);
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1, .hero-section p {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.feature-section {
+  background: #ffe600; /* Bright yellow */
+  border-radius: 0 0 0 0; /* You can adjust as needed */
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 50px 0; /* Rounded bottom-right corner */
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .feature-img {
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.btn-yellow {
+  background-color: #ffe600 !important;
+  color: #222 !important;
+  border: none !important;
+}
+
+.btn-yellow:hover {
+  background-color: #ffeb3b !important;
+  color: #222 !important;
+}
+
+.quote-section {
+  padding: 4rem 0 2rem 0;
+  background: #fff;
+  text-align: center;
+}
+
+.quote-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.quote-title .highlight {
+  color: #ffe600;
+}
+
+.quote-mark {
+  font-size: 3rem;
+  color: #222;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.quote-text {
+  font-size: 1.3rem;
+  font-family: 'serif';
+  color: #222;
+  margin-bottom: 2rem;
+  display: inline-block;
+  text-align: left;
+  max-width: 900px;
+}
+
+.quote-author-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid #ffe600;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.quote-author {
+  font-weight: 700;
+  color: #ffe600;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.quote-role {
+  color: #888;
+  font-size: 1rem;
+}
+
+.navbar-text-shadow {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.bg-transparent.navbar {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
